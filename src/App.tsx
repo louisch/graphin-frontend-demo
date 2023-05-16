@@ -14,6 +14,23 @@ interface Data {
   edges: IEdge[],
 }
 
+const defaultNode = {
+  style: {
+    keyshape: {
+      stroke: 'red',
+      fill: 'red',
+    },
+  },
+}
+
+const defaultEdge = {
+  style: {
+    keyshape: {
+      stroke: 'red',
+    },
+  },
+}
+
 const data: Data = {
   nodes: [
     {
@@ -62,7 +79,7 @@ function App() {
   return (
     <div className="app">
       <div className="graph">
-        <Graphin data={data} ref={graphinRef}>
+        <Graphin data={data} ref={graphinRef} defaultNode={defaultNode} defaultEdge={defaultEdge}>
           <DragCanvas />
           <ZoomCanvas />
         </Graphin>
