@@ -1,0 +1,26 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.graph {
+  flex-grow: 999;
+  flex-basis: 0;
+  min-inline-size: 50%;
+}
+
+.overview {
+  flex-grow: 1;
+  flex-basis: 20rem;
+  padding: 1rem;
+  border-left: 1px solid #cccccc;
+}
