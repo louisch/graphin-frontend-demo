@@ -4,6 +4,8 @@ This repository contains a basic demo of [Graphin](https://github.com/antvis/Gra
 
 This repository is based on the standard Vite React + SWC scaffolding, with `graphin` installed in addition.
 
+Probably doesn't work on mobile.
+
 ## How to run
 
 - `npm install`
